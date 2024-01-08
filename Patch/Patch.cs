@@ -6,10 +6,10 @@ namespace JustNoRoof;
 [HarmonyPatch]
 public class Patch
 {
-    [HarmonyPatch(typeof(CraftingStation), nameof(CraftingStation.CheckUsable)), HarmonyPrefix]
+    [HarmonyPatch(typeof(CraftingStation), nameof(CraftingStation.CheckUsable))] [HarmonyPrefix]
     public static bool Prefix(ref bool __result)
     {
-        if (enabledConfig.Value == true)
+        if (enabledConfig.Value)
         {
             __result = true;
             return false;

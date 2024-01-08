@@ -120,6 +120,7 @@
     </ItemGroup>
     <ItemGroup>
         <Content Include="ILRepack.targets" />
+        <Content Include="README.md" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <Target Name="CopyDLL" AfterTargets="ILRepack">
