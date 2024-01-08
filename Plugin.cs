@@ -8,7 +8,7 @@ namespace JustNoRoof;
 [BepInPlugin(ModGUID, ModName, ModVersion)]
 internal class Plugin : BaseUnityPlugin
 {
-    internal const string ModName = "JustNoRoof", ModVersion = "1.0.0", ModGUID = "com.Frogger." + ModName;
+    internal const string ModName = "JustNoRoof", ModVersion = "1.1.0", ModGUID = "com.Frogger." + ModName;
     internal static ConfigEntry<bool> enabledConfig;
     internal static Plugin _self;
 
